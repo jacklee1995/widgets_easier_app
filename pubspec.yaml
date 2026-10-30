@@ -1,0 +1,43 @@
+name: widgets_easier_gallery
+description: "Gallery / documentation app for the Widgets Easier component library."
+publish_to: none
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.0
+  flutter: ">=3.35.0"
+
+dependencies:
+  dio: ^5.11.1
+  easy_refresh: ^3.5.1
+  flutter:
+    sdk: flutter
+  flutter_highlight: ^0.7.0
+  gap: ^3.0.1
+  get: ^4.7.3
+  # 1.x is not on pub.dev yet; switch to plain `^1.0.0` once it is published.
+  widgets_easier:
+    git:
+      url: https://github.com/jacklee1995/widgets_easier.git
+      path: packages/widgets_easier
+      ref: master
+    version: ^1.0.0
+  widgets_easier_privacy_guard:
+    git:
+      url: https://github.com/jacklee1995/widgets_easier.git
+      path: packages/widgets_easier_privacy_guard
+      ref: master
+    version: ^1.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/double-arrow-right.png
+    - assets/local-image.png
+    - assets/jclee95.png
+    - assets/example-img.png
